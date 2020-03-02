@@ -8,6 +8,11 @@ packadd! editexisting	" when editing a file that is already edited with
                         " another Vim instance, go to that Vim instance
 colorscheme desert
 
+" on windows set shellslash so you every path can be resolved by forward
+" slashes
+if has("win32") || has("win64")
+    set shellslash
+endif
 " set some default options for the vimrc like language autoindent etc
 set langmenu=en_US              " set the menu items to english
 set autoindent                  " continue with the same indent when starting a new line
@@ -37,10 +42,10 @@ set shiftwidth=4
 set expandtab
 
 "directory settings for swap, undo and backup files
-set directory=$HOME/.vim/swp//,/tmp//,$TMP
-set backupdir=$HOME/.vim/backup//,/tmp//,$TMP
+set directory=$HOME/.vim/swp//,/tmp//,$TMP/
+set backupdir=$HOME/.vim/backup//,/tmp//,$TMP/
 set undofile
-set undodir=$HOME/.vim/undo//,/tmp//,$TMP
+set undodir=$HOME/.vim/undo//,/tmp//,$TMP/
 
  "statusline settings (mostly show fugitive statusline)
 set laststatus=2

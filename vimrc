@@ -26,6 +26,7 @@ set ignorecase                  " ignore casing by default and...
 set smartcase                   " only search case sensitive when using uppercase
 set hlsearch                    " activate highlighting search results
 set showcmd                     " show the current (partial) normal commands in the bottom of the screen
+set autoread                    " automatically load changes if file was changed from the outside
 
 "syntax completion copied from ft-syntax-omni
 if has("autocmd") && exists("+omnifunc")

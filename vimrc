@@ -34,3 +34,6 @@ endif
 set directory=$HOME/.vim/swp//,/tmp//
 set backupdir=$HOME/.vim/backup//,/tmp//
 set undodir=$HOME/.vim/undo//,/tmp//
+
+set laststatus=2
+set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P

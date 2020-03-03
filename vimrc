@@ -43,10 +43,11 @@ set shiftwidth=4
 set expandtab
 
 "directory settings for swap, undo and backup files
-set directory=$HOME/.vim/swp//,/tmp//,$TMP/
-set backupdir=$HOME/.vim/backup//,/tmp//,$TMP/
+set directory=$HOME/.vim/swp//,/tmp//,$HOME/vimfiles/swp//,$TMP/
+set backup
+set backupdir=$HOME/.vim/backup//,/tmp//,$HOME/vimfiles/backup//,$TMP/
 set undofile
-set undodir=$HOME/.vim/undo//,/tmp//,$TMP/
+set undodir=$HOME/.vim/undo//,/tmp//,$HOME/vimfiles/undo//,$TMP/
 
  "statusline settings (mostly show fugitive statusline)
 set laststatus=2

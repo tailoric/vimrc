@@ -65,6 +65,7 @@ if has("win32") || has("win64")
 elseif has("unix")
     nnoremap <silent> <F2> :e $HOME/.vim/vimrc<CR>
 endif
+nnoremap <Leader>m :silent make<CR>
 "use leader for window switching
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>k <C-w>k

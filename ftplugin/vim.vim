@@ -1,2 +1,2 @@
 "source configuration file
-nnoremap <buffer> <F5> :so %<CR>
+nnoremap <buffer> <silent> <F5> :w <bar> source %<CR>

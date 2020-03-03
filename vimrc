@@ -59,8 +59,6 @@ let maplocalleader = "\<Space>"
 "mappings normalmode 
 "save quickly 
 nnoremap <Leader>w :w<CR>
-"source configuration file
-nnoremap <silent> <F5> :so %<CR>
 " edit vimrc 
 if has("win32") || has("win64")
     nnoremap <silent> <F2> :e $HOME\vimfiles\vimrc<CR>

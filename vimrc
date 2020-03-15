@@ -55,11 +55,7 @@ let maplocalleader = "\<Space>"
 "save quickly 
 nnoremap <Leader>w :w<CR>
 " edit vimrc 
-if has("win32") || has("win64")
-    nnoremap <silent> <F2> :e $HOME\vimfiles\vimrc<CR>
-elseif has("unix")
-    nnoremap <silent> <F2> :e $HOME/.vim/vimrc<CR>
-endif
+nnoremap <silent> <F2> :e $MYVIMRC<CR>
 nnoremap <Leader>m :silent make <bar> redraw!<CR>
 "use leader for window switching
 nnoremap <Leader>l <C-w>l

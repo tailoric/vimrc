@@ -63,7 +63,7 @@ nnoremap <Leader>k <C-w>k
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>h <C-w>h
 "toggle hlsearch
-nnoremap <silent> <Leader>n :silent :set hlsearch!<CR>
+nnoremap <silent> <Leader>n :silent nohlsearch<CR>
 vnoremap <Leader>c "+y
 
 " disable the annoying bell

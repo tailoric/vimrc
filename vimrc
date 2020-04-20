@@ -68,3 +68,6 @@ vnoremap <Leader>c "+y
 
 " disable the annoying bell
 set belloff=all 
+" netrw settings
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 20

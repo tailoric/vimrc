@@ -56,7 +56,7 @@ let maplocalleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 " edit vimrc 
 nnoremap <silent> <F2> :e $MYVIMRC<CR>
-nnoremap <Leader>m :silent make <bar> redraw!<CR>
+nnoremap <Leader>m :silent make <bar> redraw! <bar> copen <CR>
 "use leader for window switching
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>k <C-w>k

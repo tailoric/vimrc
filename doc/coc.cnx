@@ -11,7 +11,6 @@
 安装					|coc-installation|
 设置 					|coc-configuration|
 补全   					|coc-completion|
-语言服务 				|coc-languageserver|
 接口					|coc-interface|
   快捷键 				  |coc-key-mappings|
   变量					  |coc-variables|
@@ -71,7 +70,7 @@ coc.nvim 使用 coc-settings.json 文件进行配置，该文件格式与工作�
 
 ==============================================================================
 
-安装						*coc-install*
+安装						*coc-installation*
 
 推荐使用 https://github.com/junegunn/vim-plug 添加
 >
@@ -1332,7 +1331,7 @@ Coc 列表支持以下特性：
 
 LIST COMMAND 					*coc-list-command*
 
-:CocList [{...options}] [{source}] [{...args}] 		*CocList*
+:CocList [{...options}] [{source}] [{...args}] 		*:CocList*
 
 		打开名称为 {source} 的列表, 例如: >
 
@@ -1346,18 +1345,18 @@ LIST COMMAND 					*coc-list-command*
 
 		{source} 为空时，打开列表源的列表。
 
-:CocListResume 						*CocListResume*
+:CocListResume 						*:CocListResume*
 
 		重新打开上一次的列表，输入字符和鼠标位置等信息将自动
 		复原。
 
-:CocPrev 						*CocPrev*
+:CocPrev 						*:CocPrev*
 
 		对之前列表的上一个选项执行默认操作。
 
 		该操作不会打开之前列表。
 
-:CocNext 						*CocNext*
+:CocNext 						*:CocNext*
 
 		对之前列表的下一个选项执行默认操作。
 

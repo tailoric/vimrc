@@ -73,4 +73,6 @@ nnoremap <Leader>t :%substitute/\s\+$//g<CR>
 set belloff=all
 " netrw settings
 let g:netrw_liststyle = 3
-let g:netrw_winsize = 20
+let g:netrw_winsize = 10
+let g:netrw_browse_split=4
+let g:netrw_preview=1

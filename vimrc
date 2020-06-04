@@ -51,10 +51,10 @@ set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 "leader mappings
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
-"mappings normalmode 
-"save quickly 
+"mappings normalmode
+"save quickly
 nnoremap <Leader>w :w<CR>
-" edit vimrc 
+" edit vimrc
 nnoremap <silent> <F2> :e $MYVIMRC<CR>
 nnoremap <Leader>m :silent make <bar> redraw! <bar> copen <CR>
 "use leader for window switching
@@ -66,8 +66,11 @@ nnoremap <Leader>h <C-w>h
 nnoremap <silent> <Leader>n :silent nohlsearch<CR>
 vnoremap <Leader>c "+y
 
+"remove trailing whitespaces
+nnoremap <Leader>t :%substitute/\s\+$//g<CR>
+
 " disable the annoying bell
-set belloff=all 
+set belloff=all
 " netrw settings
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 20

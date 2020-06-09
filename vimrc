@@ -47,7 +47,7 @@ set undodir=$HOME/.vim/undo//,/tmp//,$HOME/vimfiles/undo//,$TMP/
  "statusline settings (mostly show fugitive statusline)
 set laststatus=2
 set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
-
+"
 "leader mappings
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
@@ -56,15 +56,27 @@ let maplocalleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 " edit vimrc
 nnoremap <silent> <F2> :e $MYVIMRC<CR>
-nnoremap <Leader>m :silent make <bar> redraw! <bar> copen <CR>
+nnoremap <Leader>m :w <bar> silent make <bar> redraw! <bar> copen <CR>p
 "use leader for window switching
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>h <C-w>h
+nnoremap <Leader>q viwc''<esc>PE
+nnoremap <Leader>Q viwc""<esc>PE
+nnoremap <Leader>[ viwc[]<esc>PE
+nnoremap <Leader>{ viwc{}<esc>PE
+nnoremap <Leader>( viwc()<esc>PE
 "toggle hlsearch
 nnoremap <silent> <Leader>n :silent nohlsearch<CR>
+nnoremap <Leader>p "+p
 vnoremap <Leader>c "+y
+vnoremap <Leader>p "+p
+vnoremap <Leader>q c''<left><c-r>"<esc>
+vnoremap <Leader>Q c""<left><c-r>"<esc>
+vnoremap <Leader>{ c{}<left><c-r>"<esc>
+vnoremap <Leader>[ c[]<left><c-r>"<esc>
+vnoremap <Leader>( c()<left><c-r>"<esc>
 
 "remove trailing whitespaces
 nnoremap <Leader>t :%substitute/\s\+$//g<CR>

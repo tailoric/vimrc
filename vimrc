@@ -67,6 +67,8 @@ nnoremap <Leader>Q viwc""<esc>PE
 nnoremap <Leader>[ viwc[]<esc>PE
 nnoremap <Leader>{ viwc{}<esc>PE
 nnoremap <Leader>( viwc()<esc>PE
+nnoremap <Leader>s :new \| setlocal buftype=nofile bufhidden=hide noswapfile <CR>
+nnoremap <Leader>S :new \| setlocal buftype=nofile bufhidden=hide noswapfile \| :only<CR>
 "toggle hlsearch
 nnoremap <silent> <Leader>n :silent nohlsearch<CR>
 nnoremap <Leader>p "+p

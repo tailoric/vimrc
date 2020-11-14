@@ -9,6 +9,8 @@ packadd! editexisting	" when editing a file that is already edited with
 colorscheme desert
 
 " set some default options for the vimrc like language autoindent etc
+set fileformat=unix
+set fileformats=unix,dos
 set langmenu=en_US              " set the menu items to english
 set autoindent                  " continue with the same indent when starting a new line
 set number                      " show line numbers

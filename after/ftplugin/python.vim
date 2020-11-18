@@ -1,5 +1,8 @@
 " filetype settings for python 
-setlocal omnifunc=python3complete#Complete "set omnifunc to completion for python3 
+
+if has('python3')
+    setlocal omnifunc=python3complete#Complete "set omnifunc to completion for python3 
+endif
 
 setlocal foldmethod=indent
 setlocal foldnestmax=2

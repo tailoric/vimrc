@@ -1,0 +1,9 @@
+[submodule "pack/tpope/start/fugitive"]
+	path = pack/tpope/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/tpope/start/unimpaired"]
+	path = pack/tpope/start/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "pack/neoclide/start/coc"]
+	path = pack/neoclide/start/coc
+	url = https://github.com/neoclide/coc.nvim.git

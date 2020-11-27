@@ -7,3 +7,6 @@
 [submodule "pack/neoclide/start/coc"]
 	path = pack/neoclide/start/coc
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/fcpg/start/vim-osc52"]
+	path = pack/fcpg/start/vim-osc52
+	url = https://github.com/fcpg/vim-osc52.git

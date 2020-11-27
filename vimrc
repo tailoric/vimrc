@@ -77,6 +77,7 @@ nnoremap <localleader>c zc
 nnoremap <localleader>C zC
 "toggle hlsearch
 nnoremap <silent> <Leader>n :silent nohlsearch<CR>
+nnoremap <Leader>y "+yy
 nnoremap <Leader>p "+p
 vnoremap <Leader>c "+y
 vnoremap <Leader>p "+p
